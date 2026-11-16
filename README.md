@@ -8,7 +8,7 @@
 
 本地开发需要 Node.js 24：运行 `npm ci`，然后 `npm run dev`，访问终端显示的地址。`npm test` 运行回归测试，`npm run build` 构建 Pages 版本，`npm run preview` 在本地预览 `/dontmove/`。不能直接双击 HTML。
 
-推送到 `main` 后 GitHub Actions 会测试、构建并部署到 Pages。本地备份、原始素材、开发预览稿和机器专用配置不上传。
+`main` 保存源码，`gh-pages` 保存构建产物，GitHub Pages 从 `gh-pages` 根目录发布。更新游戏时需先测试和构建，再更新发布分支；仅推送源码不会改变线上版本。本地备份、原始素材、开发预览稿和机器专用配置不上传。
 
 | 操作 | 按键 |
 |---|---|
